@@ -1,0 +1,13 @@
+body {
+  background-color: #eff2f1;
+}
+
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+.content_mid {
+  width: 1140px;
+  margin: 0 auto;
+}
