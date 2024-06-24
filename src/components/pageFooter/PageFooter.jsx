@@ -4,8 +4,8 @@ import FooterWrapper from './style'
 
 const PageFooter = memo(() => {
   return (
-    <FooterWrapper>
-      <div className="content_mid content ">
+    < FooterWrapper >
+     <div className="content_mid content ">
         <div className="title">Booksure</div>
         <div className="text">
           © Copyright 2020 LuisFrag. All rights reserved.

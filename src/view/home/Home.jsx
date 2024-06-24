@@ -6,7 +6,7 @@ import Technologies from './cnps/technologies/Technologies'
 
 const Home = memo(() => {
   return (
-    <div>
+    <div >
       <Synopsis></Synopsis>
       <Importance></Importance>
       <Focus></Focus>

@@ -1,8 +1,22 @@
-import React, { memo } from 'react'
+import React, { memo,useState } from 'react'
 
 import SearchWrapper from './style'
 
+import searchIcon from '@/assets/img/search-icon.svg'
+
 const Search = memo(() => {
+
+  const [isClick, setClick] = useState(false)
+  
+
+  function clickHandle () { 
+    setClick(true)
+
+    setTimeout(() => {
+      setClick(false);
+    }, 50); // 1000毫秒后自动取消样式
+  }
+
   return (
     <SearchWrapper className="content_mid">
       <div className="describe">
@@ -14,13 +28,18 @@ const Search = memo(() => {
       </div>
 
       <div className="input">
+        <div className='container'>
         <input
           className="search-input"
           type="text"
           placeholder="Type author, book name . . ."
-        />
-
-        <button className="search-btn"></button>
+          />
+          
+          <button className={ `search-btn ${isClick ? "isClick" : ""}` }   onClick={e => {clickHandle() }}>
+            <img src={searchIcon} alt="" />
+          </button>
+        </div>
+     
       </div>
     </SearchWrapper>
   )

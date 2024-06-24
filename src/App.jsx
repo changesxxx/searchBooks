@@ -18,7 +18,7 @@ const App = memo(() => {
   return (
     <Suspense>
       <div
-        style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}
+        style={{ display: 'flex', flexDirection: 'column', height: '100vh'}}
       >
         {flag && <PageHeader></PageHeader>}
         {useRoutes(routes)}
