@@ -1,7 +1,5 @@
 import { styled } from 'styled-components'
 
-import searchIcon from '@/assets/img/search-icon.svg'
-
 const searchWrapper = styled.div`
   flex: 1;
   display: flex;
@@ -18,7 +16,6 @@ const searchWrapper = styled.div`
 
   .input {
     padding: 45px 15px;
-    background-color: skyblue;
 
     .container {
       display: flex;
@@ -59,6 +56,14 @@ const searchWrapper = styled.div`
 
         cursor: pointer;
 
+        &:active {
+          background-color: #545b62 !important;
+          /* #c0c4c8 */
+          border-width: 3px !important;
+          border-style: solid !important;
+          border-color: #c0c4c8 !important;
+        }
+
         img {
           width: 20px;
           height: auto;
@@ -67,12 +72,21 @@ const searchWrapper = styled.div`
     }
   }
 
-  .isClick {
-    background-color: #545b62 !important;
-    /* #c0c4c8 */
-    border-width: 3px !important;
-    border-style: solid !important;
-    border-color: #c0c4c8 !important;
+  .book-icon {
+    padding: 45px 15px 0;
+
+    text-align: center;
+  }
+
+  .books-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .book-item {
+      flex: 1;
+    }
+
+    padding-bottom: 20px;
   }
 `
 

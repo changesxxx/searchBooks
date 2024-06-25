@@ -12,5 +12,10 @@ module.exports = {
     resolve: {
       extensions: ['.js', '.tsx'],
     },
+    configure(webpackConfig) {
+      webpackConfig.devtool = false
+
+      return webpackConfig
+    },
   },
 }
